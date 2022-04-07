@@ -14,6 +14,7 @@
 		A3F23EBD27FEE96B00DD08A2 /* MythicWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EBC27FEE96B00DD08A2 /* MythicWeatherTests.swift */; };
 		A3F23EC727FEE96B00DD08A2 /* MythicWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EC627FEE96B00DD08A2 /* MythicWeatherUITests.swift */; };
 		A3F23EC927FEE96B00DD08A2 /* MythicWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EC827FEE96B00DD08A2 /* MythicWeatherUITestsLaunchTests.swift */; };
+		A3F23ED727FEF0A500DD08A2 /* WeatherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23ED627FEF0A500DD08A2 /* WeatherType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A3F23EC227FEE96B00DD08A2 /* MythicWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MythicWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F23EC627FEE96B00DD08A2 /* MythicWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythicWeatherUITests.swift; sourceTree = "<group>"; };
 		A3F23EC827FEE96B00DD08A2 /* MythicWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythicWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3F23ED627FEF0A500DD08A2 /* WeatherType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		A3F23EAA27FEE96700DD08A2 /* MythicWeather */ = {
 			isa = PBXGroup;
 			children = (
+				A3F23ED527FEF09800DD08A2 /* Models */,
 				A3F23EAB27FEE96700DD08A2 /* MythicWeatherApp.swift */,
 				A3F23EAD27FEE96700DD08A2 /* ContentView.swift */,
 				A3F23EAF27FEE96A00DD08A2 /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				A3F23EC827FEE96B00DD08A2 /* MythicWeatherUITestsLaunchTests.swift */,
 			);
 			path = MythicWeatherUITests;
+			sourceTree = "<group>";
+		};
+		A3F23ED527FEF09800DD08A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3F23ED627FEF0A500DD08A2 /* WeatherType.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F23EAE27FEE96700DD08A2 /* ContentView.swift in Sources */,
+				A3F23ED727FEF0A500DD08A2 /* WeatherType.swift in Sources */,
 				A3F23EAC27FEE96700DD08A2 /* MythicWeatherApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
