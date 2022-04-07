@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3F23EAC27FEE96700DD08A2 /* MythicWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EAB27FEE96700DD08A2 /* MythicWeatherApp.swift */; };
+		A3F23EAE27FEE96700DD08A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EAD27FEE96700DD08A2 /* ContentView.swift */; };
+		A3F23EB027FEE96A00DD08A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F23EAF27FEE96A00DD08A2 /* Assets.xcassets */; };
+		A3F23EB327FEE96A00DD08A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F23EB227FEE96A00DD08A2 /* Preview Assets.xcassets */; };
+		A3F23EBD27FEE96B00DD08A2 /* MythicWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EBC27FEE96B00DD08A2 /* MythicWeatherTests.swift */; };
+		A3F23EC727FEE96B00DD08A2 /* MythicWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EC627FEE96B00DD08A2 /* MythicWeatherUITests.swift */; };
+		A3F23EC927FEE96B00DD08A2 /* MythicWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EC827FEE96B00DD08A2 /* MythicWeatherUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3F23EB927FEE96B00DD08A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F23EA027FEE96700DD08A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3F23EA727FEE96700DD08A2;
+			remoteInfo = MythicWeather;
+		};
+		A3F23EC327FEE96B00DD08A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3F23EA027FEE96700DD08A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3F23EA727FEE96700DD08A2;
+			remoteInfo = MythicWeather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3F23EA827FEE96700DD08A2 /* MythicWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MythicWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F23EAB27FEE96700DD08A2 /* MythicWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythicWeatherApp.swift; sourceTree = "<group>"; };
+		A3F23EAD27FEE96700DD08A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A3F23EAF27FEE96A00DD08A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3F23EB227FEE96A00DD08A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3F23EB827FEE96B00DD08A2 /* MythicWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MythicWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F23EBC27FEE96B00DD08A2 /* MythicWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythicWeatherTests.swift; sourceTree = "<group>"; };
+		A3F23EC227FEE96B00DD08A2 /* MythicWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MythicWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3F23EC627FEE96B00DD08A2 /* MythicWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythicWeatherUITests.swift; sourceTree = "<group>"; };
+		A3F23EC827FEE96B00DD08A2 /* MythicWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythicWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3F23EA527FEE96700DD08A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F23EB527FEE96B00DD08A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F23EBF27FEE96B00DD08A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3F23E9F27FEE96700DD08A2 = {
+			isa = PBXGroup;
+			children = (
+				A3F23EAA27FEE96700DD08A2 /* MythicWeather */,
+				A3F23EBB27FEE96B00DD08A2 /* MythicWeatherTests */,
+				A3F23EC527FEE96B00DD08A2 /* MythicWeatherUITests */,
+				A3F23EA927FEE96700DD08A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3F23EA927FEE96700DD08A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3F23EA827FEE96700DD08A2 /* MythicWeather.app */,
+				A3F23EB827FEE96B00DD08A2 /* MythicWeatherTests.xctest */,
+				A3F23EC227FEE96B00DD08A2 /* MythicWeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3F23EAA27FEE96700DD08A2 /* MythicWeather */ = {
+			isa = PBXGroup;
+			children = (
+				A3F23EAB27FEE96700DD08A2 /* MythicWeatherApp.swift */,
+				A3F23EAD27FEE96700DD08A2 /* ContentView.swift */,
+				A3F23EAF27FEE96A00DD08A2 /* Assets.xcassets */,
+				A3F23EB127FEE96A00DD08A2 /* Preview Content */,
+			);
+			path = MythicWeather;
+			sourceTree = "<group>";
+		};
+		A3F23EB127FEE96A00DD08A2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A3F23EB227FEE96A00DD08A2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3F23EBB27FEE96B00DD08A2 /* MythicWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3F23EBC27FEE96B00DD08A2 /* MythicWeatherTests.swift */,
+			);
+			path = MythicWeatherTests;
+			sourceTree = "<group>";
+		};
+		A3F23EC527FEE96B00DD08A2 /* MythicWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3F23EC627FEE96B00DD08A2 /* MythicWeatherUITests.swift */,
+				A3F23EC827FEE96B00DD08A2 /* MythicWeatherUITestsLaunchTests.swift */,
+			);
+			path = MythicWeatherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3F23EA727FEE96700DD08A2 /* MythicWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3F23ECC27FEE96B00DD08A2 /* Build configuration list for PBXNativeTarget "MythicWeather" */;
+			buildPhases = (
+				A3F23EA427FEE96700DD08A2 /* Sources */,
+				A3F23EA527FEE96700DD08A2 /* Frameworks */,
+				A3F23EA627FEE96700DD08A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MythicWeather;
+			productName = MythicWeather;
+			productReference = A3F23EA827FEE96700DD08A2 /* MythicWeather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3F23EB727FEE96B00DD08A2 /* MythicWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3F23ECF27FEE96B00DD08A2 /* Build configuration list for PBXNativeTarget "MythicWeatherTests" */;
+			buildPhases = (
+				A3F23EB427FEE96B00DD08A2 /* Sources */,
+				A3F23EB527FEE96B00DD08A2 /* Frameworks */,
+				A3F23EB627FEE96B00DD08A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3F23EBA27FEE96B00DD08A2 /* PBXTargetDependency */,
+			);
+			name = MythicWeatherTests;
+			productName = MythicWeatherTests;
+			productReference = A3F23EB827FEE96B00DD08A2 /* MythicWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3F23EC127FEE96B00DD08A2 /* MythicWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3F23ED227FEE96B00DD08A2 /* Build configuration list for PBXNativeTarget "MythicWeatherUITests" */;
+			buildPhases = (
+				A3F23EBE27FEE96B00DD08A2 /* Sources */,
+				A3F23EBF27FEE96B00DD08A2 /* Frameworks */,
+				A3F23EC027FEE96B00DD08A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3F23EC427FEE96B00DD08A2 /* PBXTargetDependency */,
+			);
+			name = MythicWeatherUITests;
+			productName = MythicWeatherUITests;
+			productReference = A3F23EC227FEE96B00DD08A2 /* MythicWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3F23EA027FEE96700DD08A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A3F23EA727FEE96700DD08A2 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A3F23EB727FEE96B00DD08A2 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A3F23EA727FEE96700DD08A2;
+					};
+					A3F23EC127FEE96B00DD08A2 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A3F23EA727FEE96700DD08A2;
+					};
+				};
+			};
+			buildConfigurationList = A3F23EA327FEE96700DD08A2 /* Build configuration list for PBXProject "MythicWeather" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3F23E9F27FEE96700DD08A2;
+			productRefGroup = A3F23EA927FEE96700DD08A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3F23EA727FEE96700DD08A2 /* MythicWeather */,
+				A3F23EB727FEE96B00DD08A2 /* MythicWeatherTests */,
+				A3F23EC127FEE96B00DD08A2 /* MythicWeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3F23EA627FEE96700DD08A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F23EB327FEE96A00DD08A2 /* Preview Assets.xcassets in Resources */,
+				A3F23EB027FEE96A00DD08A2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F23EB627FEE96B00DD08A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F23EC027FEE96B00DD08A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3F23EA427FEE96700DD08A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F23EAE27FEE96700DD08A2 /* ContentView.swift in Sources */,
+				A3F23EAC27FEE96700DD08A2 /* MythicWeatherApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F23EB427FEE96B00DD08A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F23EBD27FEE96B00DD08A2 /* MythicWeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3F23EBE27FEE96B00DD08A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F23EC727FEE96B00DD08A2 /* MythicWeatherUITests.swift in Sources */,
+				A3F23EC927FEE96B00DD08A2 /* MythicWeatherUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3F23EBA27FEE96B00DD08A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3F23EA727FEE96700DD08A2 /* MythicWeather */;
+			targetProxy = A3F23EB927FEE96B00DD08A2 /* PBXContainerItemProxy */;
+		};
+		A3F23EC427FEE96B00DD08A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3F23EA727FEE96700DD08A2 /* MythicWeather */;
+			targetProxy = A3F23EC327FEE96B00DD08A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A3F23ECA27FEE96B00DD08A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3F23ECB27FEE96B00DD08A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3F23ECD27FEE96B00DD08A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MythicWeather/Preview Content\"";
+				DEVELOPMENT_TEAM = 29F59849NR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranveer.MythicWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3F23ECE27FEE96B00DD08A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MythicWeather/Preview Content\"";
+				DEVELOPMENT_TEAM = 29F59849NR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranveer.MythicWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3F23ED027FEE96B00DD08A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29F59849NR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranveer.MythicWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MythicWeather.app/MythicWeather";
+			};
+			name = Debug;
+		};
+		A3F23ED127FEE96B00DD08A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29F59849NR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranveer.MythicWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MythicWeather.app/MythicWeather";
+			};
+			name = Release;
+		};
+		A3F23ED327FEE96B00DD08A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29F59849NR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranveer.MythicWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MythicWeather;
+			};
+			name = Debug;
+		};
+		A3F23ED427FEE96B00DD08A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29F59849NR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ranveer.MythicWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MythicWeather;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3F23EA327FEE96700DD08A2 /* Build configuration list for PBXProject "MythicWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F23ECA27FEE96B00DD08A2 /* Debug */,
+				A3F23ECB27FEE96B00DD08A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3F23ECC27FEE96B00DD08A2 /* Build configuration list for PBXNativeTarget "MythicWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F23ECD27FEE96B00DD08A2 /* Debug */,
+				A3F23ECE27FEE96B00DD08A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3F23ECF27FEE96B00DD08A2 /* Build configuration list for PBXNativeTarget "MythicWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F23ED027FEE96B00DD08A2 /* Debug */,
+				A3F23ED127FEE96B00DD08A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3F23ED227FEE96B00DD08A2 /* Build configuration list for PBXNativeTarget "MythicWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3F23ED327FEE96B00DD08A2 /* Debug */,
+				A3F23ED427FEE96B00DD08A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3F23EA027FEE96700DD08A2 /* Project object */;
+}
