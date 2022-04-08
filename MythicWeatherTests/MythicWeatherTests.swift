@@ -10,7 +10,7 @@ import CoreLocation
 @testable import MythicWeather
 
 class MythicWeatherTests: XCTestCase {
-    let jsonResponse = """
+    let jsonWeatherObjet = """
 {
   "id": 2208791,
   "name": "Yafran",
@@ -56,18 +56,18 @@ class MythicWeatherTests: XCTestCase {
   }
 }
 """
-    let expectedWeatherAPIResponse = WeatherAPIResponse(id: 2208791,
-                                                        date: Date(timeIntervalSince1970: TimeInterval(1485784982)),
-                                                        name: "Yafran",
-                                                        coordinates: CLLocationCoordinate2D(latitude: 32.06329, longitude: 12.52859),
-                                                        weatherMetrics: WeatherMetrics(temp: 9.68,
-                                                                                       tempMin: 9.681, tempMax: 9.681,
-                                                                                       pressure: 961.02,
-                                                                                       seaLevel: 1036.82,
-                                                                                       grndLevel: 961.02, humidity: 85),
-                                                        weatherConditions: [
-                                                            WeatherConditions(id: 500, type: .rain, description: "light rain", icon: "10d")
-                                                        ])
+    let expectedWeather = Weather(id: 2208791,
+                                  date: Date(timeIntervalSince1970: TimeInterval(1485784982)),
+                                  name: "Yafran",
+                                  coordinates: CLLocationCoordinate2D(latitude: 32.06329, longitude: 12.52859),
+                                  weatherMetrics: WeatherMetrics(temp: 9.68,
+                                                                 tempMin: 9.681, tempMax: 9.681,
+                                                                 pressure: 961.02,
+                                                                 seaLevel: 1036.82,
+                                                                 grndLevel: 961.02, humidity: 85),
+                                  weatherConditions: [
+                                    WeatherConditions(id: 500, type: .rain, description: "light rain", icon: "10d")
+                                  ])
     
     func test_CLLocationCoordinate2DEquatableConformance() throws {
         /// Given
@@ -84,15 +84,15 @@ class MythicWeatherTests: XCTestCase {
         XCTAssertNotEqual(baseCoordinate, differentToBaseCoordinateAlt)
     }
     
-    func test_decodeWeatherAPIResponse() throws {
-        /// Given `expectedWeatherAPIResponse` and `jsonResponse`
-        let jsonResponseData = jsonResponse.data(using: .utf8)!
+    func test_decodeWeatherFromJSON() throws {
+        /// Given `expectedWeather` and `jsonResponse`
+        let jsonWeatherObjetData = jsonWeatherObjet.data(using: .utf8)!
         
         /// When
-        let decoder = JSONDecoder()
+        let compoutedWeather = try decoder.decode(Weather.self, from: jsonWeatherObjetData)
         decoder.dateDecodingStrategy = .secondsSince1970
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let compoutedWeatherAPIResponse = try decoder.decode(WeatherAPIResponse.self, from: jsonResponseData)
+        XCTAssertEqual(expectedWeather, compoutedWeather)
         
         /// Then
         XCTAssertEqual(expectedWeatherAPIResponse, compoutedWeatherAPIResponse)
