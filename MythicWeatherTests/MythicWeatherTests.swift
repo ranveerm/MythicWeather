@@ -91,6 +91,7 @@ class MythicWeatherTests: XCTestCase {
         /// When
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .secondsSince1970
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
         let compoutedWeatherAPIResponse = try decoder.decode(WeatherAPIResponse.self, from: jsonResponseData)
         
         /// Then
