@@ -16,4 +16,10 @@ struct WeatherConditions: Codable, Equatable {
     let type: WeatherType
     let description: String
     let icon: String
+    
+    enum CodingKeys: String, CodingKey {
+        case id, description, icon
+        
+        case type = "main"
+    }
 }
