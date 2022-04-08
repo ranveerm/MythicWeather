@@ -22,3 +22,12 @@ struct WeatherMetrics: Codable, Equatable {
     let grndLevel: Double?
     let humidity: Double?
 }
+
+// MARK: Stub
+extension WeatherMetrics {
+    static let stub = WeatherMetrics(temp: 9.68,
+                                     tempMin: 9.681, tempMax: 9.681,
+                                     pressure: 961.02,
+                                     seaLevel: 1036.82,
+                                     grndLevel: 961.02, humidity: 85)
+}

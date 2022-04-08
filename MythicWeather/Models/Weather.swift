@@ -52,3 +52,13 @@ extension Weather: Decodable {
         self.weatherConditions = try values.decode([WeatherConditions].self, forKey: .weatherConditions)
     }
 }
+
+// MARK: Stub
+extension Weather {
+    static let stub =  Weather(id: 2208791,
+                               date: Date(timeIntervalSince1970: TimeInterval(1485784982)),
+                               name: "Yafran",
+                               coordinates: CLLocationCoordinate2D(latitude: 32.06329, longitude: 12.52859),
+                               weatherMetrics: .stub,
+                               weatherConditions: [.stub])
+}

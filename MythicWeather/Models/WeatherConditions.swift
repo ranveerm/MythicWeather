@@ -23,3 +23,8 @@ struct WeatherConditions: Codable, Equatable {
         case type = "main"
     }
 }
+
+// MARK: Stub
+extension WeatherConditions {
+    static let stub = WeatherConditions(id: 500, type: .rain, description: "light rain", icon: "10d")
+}
