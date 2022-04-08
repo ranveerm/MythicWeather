@@ -18,6 +18,7 @@
 		A3F23ED927FEF1EA00DD08A2 /* WeatherConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23ED827FEF1EA00DD08A2 /* WeatherConditions.swift */; };
 		A3F23EDB27FFB1DB00DD08A2 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EDA27FFB1DB00DD08A2 /* Wind.swift */; };
 		A3F23EDD27FFB47900DD08A2 /* WeatherMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EDC27FFB47900DD08A2 /* WeatherMetrics.swift */; };
+		A3F23EDF27FFBB1C00DD08A2 /* WeatherAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EDE27FFBB1C00DD08A2 /* WeatherAPIResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		A3F23ED827FEF1EA00DD08A2 /* WeatherConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConditions.swift; sourceTree = "<group>"; };
 		A3F23EDA27FFB1DB00DD08A2 /* Wind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 		A3F23EDC27FFB47900DD08A2 /* WeatherMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMetrics.swift; sourceTree = "<group>"; };
+		A3F23EDE27FFBB1C00DD08A2 /* WeatherAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				A3F23ED827FEF1EA00DD08A2 /* WeatherConditions.swift */,
 				A3F23EDA27FFB1DB00DD08A2 /* Wind.swift */,
 				A3F23EDC27FFB47900DD08A2 /* WeatherMetrics.swift */,
+				A3F23EDE27FFBB1C00DD08A2 /* WeatherAPIResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F23EDF27FFBB1C00DD08A2 /* WeatherAPIResponse.swift in Sources */,
 				A3F23ED927FEF1EA00DD08A2 /* WeatherConditions.swift in Sources */,
 				A3F23EDB27FFB1DB00DD08A2 /* Wind.swift in Sources */,
 				A3F23EDD27FFB47900DD08A2 /* WeatherMetrics.swift in Sources */,
