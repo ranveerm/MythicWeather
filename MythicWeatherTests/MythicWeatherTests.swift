@@ -89,7 +89,9 @@ class MythicWeatherTests: XCTestCase {
         let jsonResponseData = jsonResponse.data(using: .utf8)!
         
         /// When
-        let compoutedWeatherAPIResponse = try JSONDecoder().decode(WeatherAPIResponse.self, from: jsonResponseData)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .secondsSince1970
+        let compoutedWeatherAPIResponse = try decoder.decode(WeatherAPIResponse.self, from: jsonResponseData)
         
         /// Then
         XCTAssertEqual(expectedWeatherAPIResponse, compoutedWeatherAPIResponse)
