@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3CBBB422800F92D007E50BC /* StandardLibraryExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CBBB412800F92D007E50BC /* StandardLibraryExtensionTests.swift */; };
 		A3F23EAC27FEE96700DD08A2 /* MythicWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EAB27FEE96700DD08A2 /* MythicWeatherApp.swift */; };
 		A3F23EAE27FEE96700DD08A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EAD27FEE96700DD08A2 /* ContentView.swift */; };
 		A3F23EB027FEE96A00DD08A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F23EAF27FEE96A00DD08A2 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3CBBB412800F92D007E50BC /* StandardLibraryExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardLibraryExtensionTests.swift; sourceTree = "<group>"; };
 		A3F23EA827FEE96700DD08A2 /* MythicWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MythicWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F23EAB27FEE96700DD08A2 /* MythicWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythicWeatherApp.swift; sourceTree = "<group>"; };
 		A3F23EAD27FEE96700DD08A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				A3F23EBC27FEE96B00DD08A2 /* MythicWeatherTests.swift */,
+				A3CBBB412800F92D007E50BC /* StandardLibraryExtensionTests.swift */,
 			);
 			path = MythicWeatherTests;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3CBBB422800F92D007E50BC /* StandardLibraryExtensionTests.swift in Sources */,
 				A3F23EBD27FEE96B00DD08A2 /* MythicWeatherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
