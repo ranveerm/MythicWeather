@@ -46,7 +46,7 @@ extension WeatherAPIResponse: Decodable {
         self.date = try values.decode(Date.self, forKey: .date)
         self.name = try values.decode(String.self, forKey: .name)
         
-        self.coordinates = .init(latitude: 0, longitude: 0)
+        self.coordinates = try values.decode(CLLocationCoordinate2D.self, forKey: .coordinates)
         
         self.weatherMetrics = try values.decode(WeatherMetrics.self, forKey: .weatherMetrics)
         self.weatherConditions = try values.decode([WeatherConditions].self, forKey: .weatherConditions)
