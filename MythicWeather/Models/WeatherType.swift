@@ -12,11 +12,11 @@ import Foundation
  - Author: [ranveerm](https://github.com/ranveerm) 👨🏾‍💻
  */
 enum WeatherType: String, Codable, CaseIterable, Equatable {
-    case thunderstorm
-    case drizzle
-    case rain
-    case snow
-    case atmosphere
-    case clear
-    case clouds
+    case thunderstorm = "Thunderstorm"
+    case drizzle = "Drizzle"
+    case rain = "Rain"
+    case snow = "Snow"
+    case atmosphere = "Atmosphere"
+    case clear = "Clear"
+    case clouds = "Clouds"
 }
