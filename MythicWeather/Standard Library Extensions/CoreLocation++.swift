@@ -13,3 +13,19 @@ extension CLLocationCoordinate2D: Equatable {
         lhs.longitude == rhs.longitude && lhs.latitude == rhs.latitude
     }
 }
+
+extension CLLocationCoordinate2D: Decodable {
+    enum CodingKeys: String, CodingKey {
+        case latitude = "lat"
+        case longitude = "lon"
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let latitude = try values.decode(Double.self, forKey: .latitude)
+        let longitude = try values.decode(Double.self, forKey: .longitude)
+        
+        self.init(latitude: latitude, longitude: longitude)
+    }
+}
