@@ -21,6 +21,7 @@
 		A3F23EDF27FFBB1C00DD08A2 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EDE27FFBB1C00DD08A2 /* Weather.swift */; };
 		A3F23EE227FFC60800DD08A2 /* CoreLocation++.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EE127FFC60800DD08A2 /* CoreLocation++.swift */; };
 		A3F23EE42800024600DD08A2 /* WeatherAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EE32800024600DD08A2 /* WeatherAPIResponse.swift */; };
+		A3F23EE928000C6100DD08A2 /* Double++.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EE828000C6000DD08A2 /* Double++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		A3F23EDE27FFBB1C00DD08A2 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		A3F23EE127FFC60800DD08A2 /* CoreLocation++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLocation++.swift"; sourceTree = "<group>"; };
 		A3F23EE32800024600DD08A2 /* WeatherAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIResponse.swift; sourceTree = "<group>"; };
+		A3F23EE828000C6000DD08A2 /* Double++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				A3F23EE127FFC60800DD08A2 /* CoreLocation++.swift */,
+				A3F23EE828000C6000DD08A2 /* Double++.swift */,
 			);
 			path = "Standard Library Extensions";
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F23EE42800024600DD08A2 /* WeatherAPIResponse.swift in Sources */,
+				A3F23EE928000C6100DD08A2 /* Double++.swift in Sources */,
 				A3F23EDF27FFBB1C00DD08A2 /* Weather.swift in Sources */,
 				A3F23ED927FEF1EA00DD08A2 /* WeatherConditions.swift in Sources */,
 				A3F23EDB27FFB1DB00DD08A2 /* Wind.swift in Sources */,
