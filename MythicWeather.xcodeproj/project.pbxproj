@@ -19,6 +19,7 @@
 		A3F23EDB27FFB1DB00DD08A2 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EDA27FFB1DB00DD08A2 /* Wind.swift */; };
 		A3F23EDD27FFB47900DD08A2 /* WeatherMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EDC27FFB47900DD08A2 /* WeatherMetrics.swift */; };
 		A3F23EDF27FFBB1C00DD08A2 /* WeatherAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EDE27FFBB1C00DD08A2 /* WeatherAPIResponse.swift */; };
+		A3F23EE227FFC60800DD08A2 /* CoreLocation++.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EE127FFC60800DD08A2 /* CoreLocation++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		A3F23EDA27FFB1DB00DD08A2 /* Wind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 		A3F23EDC27FFB47900DD08A2 /* WeatherMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMetrics.swift; sourceTree = "<group>"; };
 		A3F23EDE27FFBB1C00DD08A2 /* WeatherAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIResponse.swift; sourceTree = "<group>"; };
+		A3F23EE127FFC60800DD08A2 /* CoreLocation++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLocation++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		A3F23EAA27FEE96700DD08A2 /* MythicWeather */ = {
 			isa = PBXGroup;
 			children = (
+				A3F23EE027FFC5ED00DD08A2 /* Standard Library Extensions */,
 				A3F23ED527FEF09800DD08A2 /* Models */,
 				A3F23EAB27FEE96700DD08A2 /* MythicWeatherApp.swift */,
 				A3F23EAD27FEE96700DD08A2 /* ContentView.swift */,
@@ -148,6 +151,14 @@
 				A3F23EDE27FFBB1C00DD08A2 /* WeatherAPIResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A3F23EE027FFC5ED00DD08A2 /* Standard Library Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A3F23EE127FFC60800DD08A2 /* CoreLocation++.swift */,
+			);
+			path = "Standard Library Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 				A3F23EAE27FEE96700DD08A2 /* ContentView.swift in Sources */,
 				A3F23ED727FEF0A500DD08A2 /* WeatherType.swift in Sources */,
 				A3F23EAC27FEE96700DD08A2 /* MythicWeatherApp.swift in Sources */,
+				A3F23EE227FFC60800DD08A2 /* CoreLocation++.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

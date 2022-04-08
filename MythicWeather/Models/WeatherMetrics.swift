@@ -12,7 +12,7 @@ import Foundation
  - Important: Only the temperature filed (as defined by `temp` property) is essential for this object to exist. All other fields can be optional.
  - Author: [ranveerm](https://github.com/ranveerm) 👨🏾‍💻
  */
-struct WeatherMetrics: Codable {
+struct WeatherMetrics: Codable, Equatable {
     let temp: Double
     let tempMin: Double?
     let tempMax: Double?
