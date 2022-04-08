@@ -16,6 +16,7 @@
 		A3F23EC927FEE96B00DD08A2 /* MythicWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EC827FEE96B00DD08A2 /* MythicWeatherUITestsLaunchTests.swift */; };
 		A3F23ED727FEF0A500DD08A2 /* WeatherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23ED627FEF0A500DD08A2 /* WeatherType.swift */; };
 		A3F23ED927FEF1EA00DD08A2 /* WeatherConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23ED827FEF1EA00DD08A2 /* WeatherConditions.swift */; };
+		A3F23EDB27FFB1DB00DD08A2 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EDA27FFB1DB00DD08A2 /* Wind.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A3F23EC827FEE96B00DD08A2 /* MythicWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythicWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A3F23ED627FEF0A500DD08A2 /* WeatherType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherType.swift; sourceTree = "<group>"; };
 		A3F23ED827FEF1EA00DD08A2 /* WeatherConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherConditions.swift; sourceTree = "<group>"; };
+		A3F23EDA27FFB1DB00DD08A2 /* Wind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				A3F23ED627FEF0A500DD08A2 /* WeatherType.swift */,
 				A3F23ED827FEF1EA00DD08A2 /* WeatherConditions.swift */,
+				A3F23EDA27FFB1DB00DD08A2 /* Wind.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F23ED927FEF1EA00DD08A2 /* WeatherConditions.swift in Sources */,
+				A3F23EDB27FFB1DB00DD08A2 /* Wind.swift in Sources */,
 				A3F23EAE27FEE96700DD08A2 /* ContentView.swift in Sources */,
 				A3F23ED727FEF0A500DD08A2 /* WeatherType.swift in Sources */,
 				A3F23EAC27FEE96700DD08A2 /* MythicWeatherApp.swift in Sources */,
