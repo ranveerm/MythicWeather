@@ -10,6 +10,13 @@ import CoreLocation
 @testable import MythicWeather
 
 class MythicWeatherTests: XCTestCase {
+    var decoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .secondsSince1970
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }()
+    
     let jsonWeatherObjet = """
 {
   "id": 2208791,
@@ -90,8 +97,8 @@ class MythicWeatherTests: XCTestCase {
         
         /// When
         let compoutedWeather = try decoder.decode(Weather.self, from: jsonWeatherObjetData)
-        decoder.dateDecodingStrategy = .secondsSince1970
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        
+        /// Then
         XCTAssertEqual(expectedWeather, compoutedWeather)
         
         /// Then
