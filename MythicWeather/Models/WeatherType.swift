@@ -11,7 +11,7 @@ import Foundation
  Specify combination of all weather types returned by API
  - Author: [ranveerm](https://github.com/ranveerm) 👨🏾‍💻
  */
-enum WeatherType: String, Codable, CaseIterable {
+enum WeatherType: String, Codable, CaseIterable, Equatable {
     case thunderstorm
     case drizzle
     case rain
