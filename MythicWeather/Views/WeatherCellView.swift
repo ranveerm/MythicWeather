@@ -54,6 +54,8 @@ extension WeatherCellView {
             HStack {
                 Image(systemName: imageName)
                 Text("\(value.metricDisplayRepresentation)")
+                    .lineLimit(1)
+                    .frame(maxWidth: 100)
             }
         }
     }
