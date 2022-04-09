@@ -18,6 +18,7 @@ struct WeatherDetailView: View {
             mapView
             pressureView
             humidityView
+            windView
         }.navigationBarTitle(weather.name)
     }
 }
@@ -59,6 +60,15 @@ extension WeatherDetailView {
     
     private var humidityView: some View {
         returnOptionalMetricCellView(for: "Humidity", imageName: "humidity", weather.weatherMetrics.humidity)
+    }
+    
+    private var windView: some View {
+        HStack {
+            returnOptionalMetricCellView(for: "Wind", imageName: "wind", weather.wind.speed)
+            Image(systemName: "location.north")
+                .rotationEffect(Angle(degrees: weather.wind.direction.converted(to: .degrees).value))
+                .foregroundColor(.gray)
+        }
     }
 }
 
