@@ -53,6 +53,13 @@ extension WeatherListView {
     class ViewModel: ObservableObject {
         @Published private(set) var retrievedWeather: [Weather] = []
         private(set) var state: State = .retrievingWeatherData
+        /// The below variable can be moved into `Constants` in the future.
+        private let decoder: JSONDecoder = {
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .secondsSince1970
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            return decoder
+        }()
         
         enum State {
             case retrievingWeatherData
