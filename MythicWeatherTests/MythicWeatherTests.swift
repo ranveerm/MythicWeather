@@ -178,4 +178,35 @@ class MythicWeatherTests: XCTestCase {
         XCTAssertEqual(retrievedWeatherCount, viewModel.retrievedWeather.count)
         XCTAssertEqual(expectedWeather ,viewModel.retrievedWeather.first)
     }
+    
+    func test_WeatherListViewViewModelSetWeatherDataFailurePaths() async {
+        /// Given
+        let viewModel = WeatherListView.ViewModel()
+        let invalideURLString = "mock"
+        let incorrectURLString = "https://jsonplaceholder.typicode.com/todos/1"
+        let expectedRetrievedWeather = [Weather]()
+        
+        let expectedInitialState: WeatherListView.ViewModel.State = .retrievingWeatherData
+        let expectedInvalideURLStringState: WeatherListView.ViewModel.State = .networkError
+        let expectedIncorrectURLStringState: WeatherListView.ViewModel.State = .unknownError
+        
+        /// When testing initial conditions
+        
+        /// Then
+        XCTAssertEqual(expectedInitialState, viewModel.state)
+        
+        /// When
+        await viewModel.setWeatherData(from: invalideURLString)
+        
+        /// Then
+        XCTAssertEqual(expectedRetrievedWeather, viewModel.retrievedWeather)
+        XCTAssertEqual(expectedInvalideURLStringState ,viewModel.state)
+        
+        /// When
+        await viewModel.setWeatherData(from: incorrectURLString)
+        
+        /// Then
+        XCTAssertEqual(expectedRetrievedWeather, viewModel.retrievedWeather)
+        XCTAssertEqual(expectedIncorrectURLStringState ,viewModel.state)
+    }
 }
