@@ -17,8 +17,10 @@ struct WeatherListView: View {
                 notificationView
                 weatherListView
             }
+            .refreshable { await viewModel.setWeatherData(from: Constants.weatherDataURLString) }
             .navigationBarTitle("☀️ Mythic Weather ⛈")
         }
+        .task { await viewModel.setWeatherData(from: Constants.weatherDataURLString) }
     }
 }
 
