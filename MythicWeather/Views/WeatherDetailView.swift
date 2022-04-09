@@ -19,6 +19,7 @@ struct WeatherDetailView: View {
             pressureView
             humidityView
             windView
+            rainDataView
         }.navigationBarTitle(weather.name)
     }
 }
@@ -70,6 +71,18 @@ extension WeatherDetailView {
                 .foregroundColor(.gray)
         }
     }
+    
+    @ViewBuilder private var rainDataView: some View {
+        if let rainData = weather.rainData {
+            HStack(alignment: .bottom) {
+                Text("Rain")
+                Image(systemName: "cloud.rain")
+                Spacer()
+                returnRainDataView(key: "1h", value: rainData.oneHour)
+                returnRainDataView(key: "3h", value: rainData.threeHours)
+            }
+        }
+    }
 }
 
 // MARK: Helper Methods
@@ -103,6 +116,16 @@ extension WeatherDetailView {
                 Spacer()
                 returnOptionalMetricForDisplay(value)
             }
+        }
+    }
+    
+    @ViewBuilder private func returnRainDataView(key: String, value: Double?) -> some View {
+        if let value = value {
+            Text(key)
+                .font(.caption)
+                .foregroundColor(.gray)
+                .padding(.leading)
+            Text(value.metricDisplayRepresentation)
         }
     }
 }
