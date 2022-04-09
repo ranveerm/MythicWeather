@@ -73,7 +73,16 @@ extension WeatherListView {
         
         func setWeatherData(from urlString: String) async {
             self.state = .retrievingWeatherData
-            self.retrievedWeather = await fetchWeatherData(from: urlString)
+            let retrievedWeather = await fetchWeatherData(from: urlString)
+            await setWeatherData(retrievedWeather)
+        }
+        
+        /**
+         Overloaded method that purely serves to set `retrievedWeather`, ensuring this is conducted on the main thread.
+         - Author: [ranveerm](https://github.com/ranveerm) 👨🏾‍💻
+         */
+        @MainActor private func setWeatherData(_ retrievedWeather: [Weather]) {
+            self.retrievedWeather = retrievedWeather
         }
         
         private func fetchWeatherData(from urlString: String) async -> [Weather] {
