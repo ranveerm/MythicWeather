@@ -66,6 +66,49 @@ extension WeatherListView {
             case networkError
             case noWeatherDataToDispaly
             case displayWeatherData
+            case unknownError
+        }
+        
+        func setWeatherData(from urlString: String) async {
+            self.state = .retrievingWeatherData
+            self.retrievedWeather = await fetchWeatherData(from: urlString)
+        }
+        
+        private func fetchWeatherData(from urlString: String) async -> [Weather] {
+            guard let url = URL(string: urlString) else {
+                self.state = .unknownError
+                return []
+            }
+            
+            let (state, data) = await makeWeatherDataNetworkRequest(from: url)
+            
+            guard let data = data else {
+                self.state = state
+                return []
+            }
+            
+            guard let weatherData = try? decoder.decode(WeatherAPIResponse.self, from: data) else {
+                self.state = .unknownError
+                return []
+            }
+            
+            self.state = .displayWeatherData
+            return weatherData.weatherItems
+        }
+        
+        private func makeWeatherDataNetworkRequest(from url: URL) async -> (State, Data?) {
+            self.state = .retrievingWeatherData
+            
+            do {
+                let (data, response) = try await URLSession.shared.data(from: url)
+                guard let httpResponse = response as? HTTPURLResponse,
+                      httpResponse.statusCode == 200 else {
+                          return(.networkError, nil)
+                      }
+                return (.retrievingWeatherData, data)
+            } catch {
+                return(.networkError, nil)
+            }
         }
     }
 }
