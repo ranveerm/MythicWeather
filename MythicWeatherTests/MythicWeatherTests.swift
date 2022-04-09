@@ -73,6 +73,7 @@ class MythicWeatherTests: XCTestCase {
                                                                  pressure: 961.02,
                                                                  seaLevel: 1036.82,
                                                                  grndLevel: 961.02, humidity: 85),
+                                  wind: Wind(speed: 3.96, direction: .init(value: 356.5, unit: .degrees)),
                                   weatherConditions: [
                                     WeatherConditions(id: 500, type: .rain, description: "light rain", icon: "10d")
                                   ])
@@ -123,15 +124,8 @@ class MythicWeatherTests: XCTestCase {
 }
 """
     
-    let expectedWeatherAPIResponse = WeatherAPIResponse(responseCode: "200", calculatedTime: 0.3107, count: 1,
-                                                        weatherItems: [
-                                                            Weather(id: 2208791,
-                                                                    date: Date(timeIntervalSince1970: 1485784982),
-                                                                    name: "Yafran",
-                                                                    coordinates: CLLocationCoordinate2D(latitude: 32.06329, longitude: 12.52859), weatherMetrics: WeatherMetrics(temp: 9.68, tempMin: 9.681, tempMax: 9.681, pressure: 961.02, seaLevel: 1036.82, grndLevel: 961.02, humidity: 85), weatherConditions: [
-                                                                        WeatherConditions(id: 500, type: .rain, description: "light rain", icon: "10d")
-                                                                    ])
-                                                        ])
+    lazy var expectedWeatherAPIResponse = WeatherAPIResponse(responseCode: "200", calculatedTime: 0.3107, count: 1,
+                                                        weatherItems: [expectedWeather])
     
     func test_decodeWeatherFromJSON() throws {
         /// Given `expectedWeather` and `jsonResponse`
