@@ -74,6 +74,7 @@ class MythicWeatherTests: XCTestCase {
                                                                  seaLevel: 1036.82,
                                                                  grndLevel: 961.02, humidity: 85),
                                   wind: Wind(speed: 3.96, direction: .init(value: 356.5, unit: .degrees)),
+                                  rainData: RainData(oneHour: nil, threeHours: 0.255),
                                   weatherConditions: [
                                     WeatherConditions(id: 500, type: .rain, description: "light rain", icon: "10d")
                                   ])
