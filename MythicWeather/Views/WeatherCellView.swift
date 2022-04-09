@@ -11,9 +11,12 @@ struct WeatherCellView: View {
     let weather: Weather
     
     var body: some View {
-        VStack {
-            titleView
-            captionView
+        HStack {
+            VStack {
+                titleView
+                captionView
+            }
+            iconView
         }
     }
 }
@@ -23,14 +26,13 @@ extension WeatherCellView {
     var titleView: some View {
         HStack {
             Text(weather.name)
+                .font(.title)
             Spacer()
-            Text(weather.weatherConditions.first?.type.customIcons() ?? "")
         }
-        .font(.title)
     }
     
     var captionView: some View{
-        HStack(spacing: 30) {
+        HStack(spacing: 20) {
             returnOptionalMetricForDisplay(weather.weatherMetrics.temp, imageName: "thermometer")
             returnOptionalMetricForDisplay(weather.weatherMetrics.humidity, imageName: "humidity")
             returnOptionalMetricForDisplay(weather.weatherMetrics.pressure, imageName: "barometer")
@@ -38,6 +40,10 @@ extension WeatherCellView {
         }
         .foregroundColor(.gray)
         .font(.footnote)
+    }
+    
+    var iconView: some View {
+        Text(weather.weatherConditions.first?.type.customIcons() ?? "")
     }
 }
 
