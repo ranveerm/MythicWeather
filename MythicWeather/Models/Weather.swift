@@ -23,6 +23,7 @@ struct Weather: Identifiable {
     
     let weatherMetrics: WeatherMetrics
     let wind: Wind
+    let rainData: RainData?
     let weatherConditions: [WeatherConditions]
     
     enum CodingKeys: String, CodingKey {
@@ -31,6 +32,7 @@ struct Weather: Identifiable {
         case date = "dt"
         case coordinates = "coord"
         case weatherMetrics = "main"
+        case rainData = "rain"
         case weatherConditions = "weather"
     }
 }
@@ -50,6 +52,7 @@ extension Weather: Decodable {
         
         self.weatherMetrics = try values.decode(WeatherMetrics.self, forKey: .weatherMetrics)
         self.wind = try values.decode(Wind.self, forKey: .wind)
+        self.rainData = try? values.decode(RainData.self, forKey: .rainData)
         self.weatherConditions = try values.decode([WeatherConditions].self, forKey: .weatherConditions)
     }
 }
@@ -60,6 +63,6 @@ extension Weather {
                                date: Date(timeIntervalSince1970: TimeInterval(1485784982)),
                                name: "Yafran",
                                coordinates: CLLocationCoordinate2D(latitude: 32.06329, longitude: 12.52859),
-                               weatherMetrics: .stub, wind: .stub,
+                               weatherMetrics: .stub, wind: .stub, rainData: .stub,
                                weatherConditions: [.stub])
 }
