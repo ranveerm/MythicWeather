@@ -11,6 +11,7 @@
 		A3CBBB44280135A1007E50BC /* WeatherCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CBBB43280135A1007E50BC /* WeatherCellView.swift */; };
 		A3CBBB46280138D4007E50BC /* WeatherListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CBBB45280138D4007E50BC /* WeatherListView.swift */; };
 		A3CBBB49280144B5007E50BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CBBB48280144B5007E50BC /* Constants.swift */; };
+		A3CBBB4B28017356007E50BC /* RainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CBBB4A28017356007E50BC /* RainData.swift */; };
 		A3F23EAC27FEE96700DD08A2 /* MythicWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EAB27FEE96700DD08A2 /* MythicWeatherApp.swift */; };
 		A3F23EAE27FEE96700DD08A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F23EAD27FEE96700DD08A2 /* ContentView.swift */; };
 		A3F23EB027FEE96A00DD08A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3F23EAF27FEE96A00DD08A2 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		A3CBBB43280135A1007E50BC /* WeatherCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCellView.swift; sourceTree = "<group>"; };
 		A3CBBB45280138D4007E50BC /* WeatherListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListView.swift; sourceTree = "<group>"; };
 		A3CBBB48280144B5007E50BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A3CBBB4A28017356007E50BC /* RainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainData.swift; sourceTree = "<group>"; };
 		A3F23EA827FEE96700DD08A2 /* MythicWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MythicWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F23EAB27FEE96700DD08A2 /* MythicWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythicWeatherApp.swift; sourceTree = "<group>"; };
 		A3F23EAD27FEE96700DD08A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				A3F23ED627FEF0A500DD08A2 /* WeatherType.swift */,
 				A3F23ED827FEF1EA00DD08A2 /* WeatherConditions.swift */,
 				A3F23EDA27FFB1DB00DD08A2 /* Wind.swift */,
+				A3CBBB4A28017356007E50BC /* RainData.swift */,
 				A3F23EDC27FFB47900DD08A2 /* WeatherMetrics.swift */,
 				A3F23EDE27FFBB1C00DD08A2 /* Weather.swift */,
 				A3F23EE32800024600DD08A2 /* WeatherAPIResponse.swift */,
@@ -331,6 +334,7 @@
 				A3F23EE42800024600DD08A2 /* WeatherAPIResponse.swift in Sources */,
 				A3F23EE928000C6100DD08A2 /* Double++.swift in Sources */,
 				A3F23EDF27FFBB1C00DD08A2 /* Weather.swift in Sources */,
+				A3CBBB4B28017356007E50BC /* RainData.swift in Sources */,
 				A3CBBB46280138D4007E50BC /* WeatherListView.swift in Sources */,
 				A3F23EE7280007FF00DD08A2 /* WeatherDetailView.swift in Sources */,
 				A3F23ED927FEF1EA00DD08A2 /* WeatherConditions.swift in Sources */,
