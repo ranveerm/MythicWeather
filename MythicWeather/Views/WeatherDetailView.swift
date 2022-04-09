@@ -15,6 +15,7 @@ struct WeatherDetailView: View {
         Form {
             temperatureView
             descriptionView
+            mapView
             pressureView
             humidityView
         }.navigationBarTitle(weather.name)
@@ -41,6 +42,15 @@ extension WeatherDetailView {
             Spacer()
             Text("\(weather.date.formatted())")
         }
+    }
+    
+    private var mapView: some View {
+        Map(coordinateRegion: .constant(MKCoordinateRegion(center: weather.coordinates, latitudinalMeters: 1_000, longitudinalMeters: 1_000)), annotationItems: [weather]) {
+            MapMarker(coordinate: $0.coordinates)
+        }
+        .frame(minHeight: 200)
+        .cornerRadius(15)
+        .padding(.vertical)
     }
     
     private var pressureView: some View {
