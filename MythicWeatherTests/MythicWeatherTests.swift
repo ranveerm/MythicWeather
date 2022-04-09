@@ -154,4 +154,28 @@ class MythicWeatherTests: XCTestCase {
         /// Then
         XCTAssertEqual(expectedWeatherAPIResponse, compoutedWeatherAPIResponse)
     }
+    
+    /**
+     - It is sufficient to test the first element from the retrieved weather for equality along with the size of the array retrieved (instead of comparing each element)
+     - The below implicitly tests the JSON decoder within the viewmodel
+     - Author: [ranveerm](https://github.com/ranveerm) 👨🏾‍💻
+     */
+    func test_WeatherListViewViewModelSetWeatherDataSuccessPath() async {
+        /// Given `expectedWeather`
+        let viewModel = WeatherListView.ViewModel()
+        let retrievedWeatherCount = 5
+        let expectedInitialRetrievedWeather = [Weather]()
+        
+        /// When testing initial conditions
+        
+        /// Then
+        XCTAssertEqual(expectedInitialRetrievedWeather, viewModel.retrievedWeather)
+        
+        /// When
+        await viewModel.setWeatherData(from: Constants.weatherDataURLString)
+        
+        /// Then
+        XCTAssertEqual(retrievedWeatherCount, viewModel.retrievedWeather.count)
+        XCTAssertEqual(expectedWeather ,viewModel.retrievedWeather.first)
+    }
 }
