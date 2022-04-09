@@ -20,3 +20,17 @@ enum WeatherType: String, Codable, CaseIterable, Equatable {
     case clear = "Clear"
     case clouds = "Clouds"
 }
+
+extension WeatherType {
+    func customIcons() -> String {
+        switch self {
+        case .thunderstorm: return "⛈"
+        case .drizzle: return "🌧"
+        case .rain: return "☔️"
+        case .snow: return "❄️"
+        case .atmosphere: return "☄️"
+        case .clear: return "☀️"
+        case .clouds: return "☁️"
+        }
+    }
+}
