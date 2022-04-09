@@ -13,10 +13,9 @@ import CoreLocation
  - Todo:
  1. Add rain and clouds properties
  2. Make the object conform to `Codable`. Currently this is not possible a property within object is of type `CLLocationCoordinate2D`, which does not conform to `Codable`
-
  - Author: [ranveerm](https://github.com/ranveerm) 👨🏾‍💻
  */
-struct Weather {
+struct Weather: Identifiable {
     let id: Int
     let date: Date
     let name: String
